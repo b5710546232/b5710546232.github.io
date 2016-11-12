@@ -35,7 +35,8 @@ export default {
     scollTo(e){
       scrollToElement(e, {
     offset: 0,
-    duration: 1500
+    ease: 'inSine',
+    duration: 500
 })
     },
     toggle(){

@@ -8,6 +8,7 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
+    "chart.js": "^2.3.0",
     "scroll-to-element": "^2.0.0",
     "vue": "^2.0.1",
     "vue-router": "^2.0.1"

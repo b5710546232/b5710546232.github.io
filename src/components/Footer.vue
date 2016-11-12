@@ -1,10 +1,9 @@
 <template lang="html">
   <footer class="footer">
-  <div class="container">
     <div class="content has-text-centered">
-      <br>
+      © Nattapat Sukpootanan
+      <p>VueJS • Bulma</p>
     </div>
-  </div>
 </footer>
 </template>
 

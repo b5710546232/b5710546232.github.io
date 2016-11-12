@@ -1,7 +1,7 @@
 <template lang="html">
   <section class="hero is-info">
   <div class="hero-head">
-    <div class="title">
+    <div class="title my-title">
       Nattapat Sukpootanan
     </div>
   </div>
@@ -9,7 +9,7 @@
   <div class="nav-center">
       <a class="nav-item" href="#">
         <div class="tiles">
-          <div class="">
+          <div class="my-icon">
             <i class="fa fa-facebook-square fa-3x">
           </div>
           <span>facebook</span>
@@ -49,6 +49,12 @@ export default {
 </script>
 
 <style scoped>
+.my-icon{
+  text-align: center;
+}
+.my-title{
+ text-align: center;
+}
 .title{
   font-size: 42px;
 }
