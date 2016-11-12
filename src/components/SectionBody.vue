@@ -9,6 +9,9 @@
               Inreseted in Game development ,Web application  and Mobile Application.
             </h3>
         </div>
+        <div class="body">
+          Hello
+        </div>
       </div>
   </section>
 </div>
