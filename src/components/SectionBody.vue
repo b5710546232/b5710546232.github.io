@@ -1,14 +1,14 @@
 <template lang="html">
   <div>
     <!-- about-me -->
-    <section class="section is-medium is-mobile">
+    <section class="section is-mobile">
       <div class="container">
         <div class="heading">
           <h1 class="title">About me</h1>
           <h3 class="subtitle"></h3>
         </div>
         <br>
-        <div class="content is-large">
+        <div class="content  is-large">
           <p>I'm Software and Knowledge Engeering Student @ Kasetsart Universty.</p>
           <p>Interested : </p>
           <ul>
@@ -20,7 +20,7 @@
       </div>
     </section>
     <!-- Skill -->
-    <section class="section is-medium" id="my-skill">
+    <section class="section  is-mobile" id="my-skill">
       <div class="container">
         <div class="heading">
           <h1 class="title">My Skill</h1>
@@ -48,7 +48,7 @@
         </div>
       </div>
     </section>
-    <section class="section is-medium works" id="works">
+    <section class="section is-mobile" id="works">
       <div class="container">
         <div class="heading">
           <h1 class="title">My Works</h1>
