@@ -7,8 +7,22 @@
   </div>
   <div class="hero-body">
   <div class="nav-center">
-      <a class="nav-item" href="#"> <i class="fa fa-facebook-square fa-3x"> </a>
-      <a class="nav-item" href="https://github.com/b5710546232"> <i class="fa fa-github-alt fa-3x"></i> </a>
+      <a class="nav-item" href="#">
+        <div class="tiles">
+          <div class="">
+            <i class="fa fa-facebook-square fa-3x">
+          </div>
+          <span>facebook</span>
+        </div>
+      </a>
+      <a class="nav-item" href="https://github.com/b5710546232">
+        <div class="tiles">
+          <div class="">
+            <i class="fa fa-github-alt fa-3x"></i>
+          </div>
+          <span>github</span>
+        </div>
+      </a>
 </div>
   <!-- </nav> -->
   </div>

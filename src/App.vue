@@ -2,14 +2,14 @@
   <div id="app">
     <SectionHeader></SectionHeader>
     <SectionBody></SectionBody>
-    <Footer></Footer>
+    <!-- <SectionFooter></SectionFooter> -->
   </div>
 </template>
 
 <script>
 import SectionHeader from './components/SectionHeader.vue'
 import SectionBody from './components/SectionBody.vue'
-import Footer from './components/Footer.vue'
+import SectionFooter from './components/Footer.vue'
 export default {
   name: 'app',
   data () {
@@ -20,7 +20,7 @@ export default {
   components : {
     SectionHeader,
     SectionBody,
-    Footer
+    SectionFooter
   }
 }
 </script>
