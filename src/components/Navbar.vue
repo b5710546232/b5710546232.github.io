@@ -33,6 +33,7 @@ export default {
   mounted () {},
   methods: {
     scollTo(e){
+      event.preventDefault()
       scrollToElement(e, {
     offset: 0,
     ease: 'inSine',
