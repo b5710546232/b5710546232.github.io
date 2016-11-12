@@ -8,17 +8,17 @@
   <div class="hero-body">
   <div class="nav-center">
       <a class="nav-item" href="#">
-        <div class="tiles">
-          <div class="my-icon">
-            <i class="fa fa-facebook-square fa-3x">
+        <div class="tiles my-icon">
+          <div class="icon-wrapper">
+            <i class="fa fa-facebook-square fa-4x">
           </div>
           <span>facebook</span>
         </div>
       </a>
       <a class="nav-item" href="https://github.com/b5710546232">
-        <div class="tiles">
-          <div class="">
-            <i class="fa fa-github-alt fa-3x"></i>
+        <div class="tiles my-icon">
+          <div class="icon-wrapper">
+            <i class="fa fa-github-alt fa-4x"></i>
           </div>
           <span>github</span>
         </div>
