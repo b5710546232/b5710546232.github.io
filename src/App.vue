@@ -1,7 +1,11 @@
 <template>
   <div id="app">
+    <div class="header">
     <SectionHeader></SectionHeader>
+    </div>
+    <div class="section-body">
     <SectionBody></SectionBody>
+    </div>
     <SectionFooter></SectionFooter>
   </div>
 </template>
@@ -33,9 +37,13 @@ export default {
   /*text-align: center;*/
   color: #2c3e50;
 }
-
 h1, h2 {
   font-weight: normal;
+}
+.header{
+}
+.section-body{
+  position: relative;
 }
 
 ul {

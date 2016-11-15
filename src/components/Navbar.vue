@@ -36,7 +36,7 @@ export default {
       event.preventDefault()
       scrollToElement(e, {
     offset: 0,
-    ease: 'inSine',
+    ease: 'outBack',
     duration: 500
 })
     },

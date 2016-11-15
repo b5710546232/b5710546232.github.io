@@ -20,6 +20,9 @@
       </div>
     </section>
     <!-- Skill -->
+    <!-- <div id = "my-skill-chart"> -->
+      <!-- <SkillChart></SkillChart> -->
+    <!-- </div> -->
     <section class="section  is-mobile" id="my-skill">
       <div class="container">
         <div class="heading">
@@ -70,7 +73,7 @@
             </ul>
             Game
             <ul>
-              <li>Heaven Drill Runner</li>
+              <a href="http://b5710546232.github.io/HEAVEN-DRILL-RUNNER/ "><li>HEAVEN-DRILL-RUNNER</li></a>
             </ul>
           </ul>
         </div>
@@ -81,6 +84,7 @@
 </template>
 
 <script>
+import SkillChart from './SkillChart.vue'
 export default {
   data () {
     return {}
@@ -88,10 +92,20 @@ export default {
   computed: {},
   mounted () {},
   methods: {},
-  components: {}
+  components: {
+    SkillChart
+  }
 }
 </script>
 <style scoped>
+#my-skill-chart{
+  display: block;
+
+margin: 0px auto;
+text-align: center;
+  width: 400px;
+  height: 400px;
+}
 .title{
   font-size: 42px;
 }
