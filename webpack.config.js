@@ -24,6 +24,7 @@ module.exports = {
         exclude: /node_modules/
       },
       { test: /\.json$/, loader: 'json-loader'},
+      { test: /\.md$/, loader: "html!markdown" },
       {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file',

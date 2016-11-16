@@ -18,9 +18,10 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      renderer : null
     }
   },
+  mounted(){},
   components : {
     SectionHeader,
     SectionBody,

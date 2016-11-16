@@ -11,7 +11,7 @@
     "chart.js": "^2.3.0",
     "scroll-to-element": "^2.0.0",
     "vue": "^2.0.1",
-    "vue-router": "^2.0.1"
+    "vue-router": "^2.0.2"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
@@ -20,7 +20,10 @@
     "cross-env": "^3.0.0",
     "css-loader": "^0.25.0",
     "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
     "json-loader": "^0.5.4",
+    "level-filesystem": "^1.2.0",
+    "markdown-loader": "^0.1.7",
     "vue-loader": "^9.7.0",
     "webpack": "^2.1.0-beta.25",
     "webpack-dev-server": "^2.1.0-beta.0"
