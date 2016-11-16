@@ -9,17 +9,31 @@
 
 <script>
 import marked from 'marked'
-var file = require('level-filesystem');
-import article from '../../articles/reader.md'
+import config from '../../articles/config.json'
+var arr = []
+// for(let i = 0 ; i<config.path.length;i++){
+//   let p = config.path[i]
+//   console.log(' p ',p)
+//   arr[i] = require(String(p))
+//   // arr[i] = require(p)
+// }
+let word = config.path[0]
+console.log(word.toString());
+let a = "/Users/Nattapat/Learning/Vue/t01/safe-vue/src/articles/reader00.md"
+arr[0] = require("/Users/Nattapat/Learning/Vue/t01/safe-vue/src/articles"+word+".md")
 export default {
   data () {
     return {}
   },
   computed: {},
   mounted () {
+
+
     this.renderer = new marked.Renderer()
     document.getElementById('my-content').innerHTML =
-      marked(article)
+      marked(arr[0])
+      console.log('hello')
+      console.log(config)
   },
   methods: {},
   components: {}

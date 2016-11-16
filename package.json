@@ -4,6 +4,7 @@
   "author": "b5710546232 <nattapat.su@ku.th>",
   "private": true,
   "scripts": {
+    "start": "node script.js & npm run dev",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --progress --open --inline --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
@@ -20,6 +21,8 @@
     "cross-env": "^3.0.0",
     "css-loader": "^0.25.0",
     "file-loader": "^0.9.0",
+    "file-system": "^2.2.1",
+    "glob-fs": "^0.1.6",
     "html-loader": "^0.4.4",
     "json-loader": "^0.5.4",
     "level-filesystem": "^1.2.0",
