@@ -4,7 +4,8 @@
   "author": "b5710546232 <nattapat.su@ku.th>",
   "private": true,
   "scripts": {
-    "start": "node script.js & npm run dev",
+    "write":"node createArticle",
+    "start": "node article.config.js & npm run dev",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --progress --open --inline --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },

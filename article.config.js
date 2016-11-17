@@ -23,15 +23,17 @@ var TARGET = path.join(__dirname,"src/articles/")
 fs.readdir(TARGET, function(err, items) {
     console.log(items);
     let arr = []
-    for (var i=0; i<items.length; i++) {
+    for (let i=0; i<items.length; i++) {
         console.log(path.join(TARGET,items[i]))
         if(items[i].endsWith(".md")){
-        arr.push(path.join(TARGET,items[i]))
+        arr.push(path.join("",items[i]))
         console.log('i',items[i]);
       }
     }
     result = {
-      path:arr
+      path:arr,
+      title:arr,
+      date:""
     }
     console.log('\n\n');
     fs.writeFile('/Users/Nattapat/Learning/Vue/t01/safe-vue/src/articles/config.json', JSON.stringify(result) , function (err) {

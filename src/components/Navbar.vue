@@ -5,7 +5,7 @@
       <a class="nav-item" href="#" @click="scollTo('#about-me')" > <router-link to="/">ABOUT</router-link></a>
       <a class="nav-item" href="#my-skill" @click="scollTo('#my-skill')"> <router-link to="/">SKILL</router-link> </a>
       <a class="nav-item" href="#works" @click="scollTo('#works')" > <router-link to="/">WORKS</router-link> </a>
-      <!-- <a class="nav-item" href="" @click="scollTo('#works')" ><router-link to="/blog">BLOG</router-link></a> -->
+      <a class="nav-item" href="" @click="scollTo('#works')" ><router-link to="/blog">BLOG</router-link></a>
     </div>
     <!-- right -->
   </div>
@@ -50,6 +50,6 @@ export default {
 .nav-left{
 }
 a.nav-item{
-  font-size: 30px;
+  font-size: 42px;
 }
 </style>
