@@ -1,36 +1,33 @@
 <template lang="html">
-  <section class="hero is-info">
-  <div class="hero-head">
-    <div class="title my-title">
-      Nattapat Sukpootanan
-    </div>
-  </div>
-  <div class="hero-body">
-  <div class="nav-center">
-      <a class="nav-item" href="#">
-        <div class="tiles my-icon">
-          <div class="icon-wrapper">
-            <i class="fa fa-facebook-square fa-5x">
-          </div>
-          <span>facebook</span>
+    <section class="hero is-info">
+      <div class="hero-head">
+        <div class="title my-title">
+          Nattapat Sukpootanan
         </div>
-      </a>
-      <a class="nav-item" href="https://github.com/b5710546232">
-        <div class="tiles my-icon">
-          <div class="icon-wrapper">
-            <i class="fa fa-github-alt fa-5x"></i>
+      </div>
+      <div class="hero-body">
+        <div class="nav-center">
+          <a class="nav-item" href="#">
+            <div class="tiles my-icon">
+              <div class="icon-wrapper">
+                <i class="fa fa-facebook-square fa-5x">
+                </div>
+                <span>facebook</span>
+              </div>
+            </a>
+            <a class="nav-item" href="https://github.com/b5710546232">
+              <div class="tiles my-icon">
+                <div class="icon-wrapper">
+                  <i class="fa fa-github-alt fa-5x"></i>
+                </div>
+                <span>github</span>
+              </div>
+            </a>
           </div>
-          <span>github</span>
         </div>
-      </a>
-</div>
-  <!-- </nav> -->
-  </div>
-  </div>
-    <Navbar></Navbar>
-    </div>
-  </div>
-</section>
+      <!-- <Navbar></Navbar> -->
+    </section>
+
 </template>
 
 <script>
@@ -53,7 +50,7 @@ export default {
   text-align: center;
 }
 .my-title{
- text-align: center;
+  text-align: center;
 }
 .title{
   font-size: 42px;

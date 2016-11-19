@@ -5,9 +5,7 @@
 </template>
 
 <script>
-import marked from 'marked'
 import BlogArticles from './BlogArticles.vue'
-import {articles} from './BlogContents'
 export default {
   data () {
     return {
@@ -15,9 +13,7 @@ export default {
     }
   },
   computed: {},
-  mounted () {
-    console.log('blog',articles);
-  },
+  mounted () {},
   methods: {},
   components: {
     BlogArticles

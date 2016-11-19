@@ -19,6 +19,7 @@ var path = require("path")
 // var path = process.argv[3];
 // console.log(process.argv);
 // console.log(__dirname+'/');
+let results = []
 var TARGET = path.join(__dirname,"src/articles/")
 fs.readdir(TARGET, function(err, items) {
     console.log(items);
@@ -30,14 +31,20 @@ fs.readdir(TARGET, function(err, items) {
         console.log('i',items[i]);
       }
     }
+    for(let i =0;i<arr.length;i++){
     result = {
-      path:arr,
-      title:arr,
-      date:""
+      path:arr[i],
+      title:arr[i].split('_')[1].substr(0,arr[i].split('_')[1].length-3),
+      date:arr[i].split('_')[0]
     }
-    console.log('\n\n');
-    fs.writeFile('/Users/Nattapat/Learning/Vue/t01/safe-vue/src/articles/config.json', JSON.stringify(result) , function (err) {
+    results.push(result)
+    }
+    // console.log(results);
+    // console.log('\n result =>'  ,JSON.stringify(results));
+    // console.log('\n');
+    fs.writeFile('/Users/Nattapat/Learning/Vue/t01/safe-vue/src/articles/config.json', JSON.stringify(results) , function (err) {
         if (err)
             return console.log(err);
-    });
+    })
+
 })

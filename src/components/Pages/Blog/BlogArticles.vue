@@ -1,24 +1,21 @@
 <template lang="html">
-  <div>
-    <div>
-      welcome to my blog.
-    </div>
+<div class="container">
+  <div class="header">
+      Welcome to my Blog...
+  </div>
+  <div class="my-articles">
     <div v-for="value in items">
-    <BlogArticle  v-bind:articleName="value" ></BlogArticle>
+    <BlogArticle  v-bind:articleName="value.title"  v-bind:articleDate="value.date"></BlogArticle>
   </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
 import marked from 'marked'
-import config from '../../../articles/config.json'
+import contents from './BlogContents'
 import BlogArticle from './BlogArticle.vue'
-var arr = []
-for(let i =0;i<config.path.length;i++){
-  let word = config.path[i]
-  arr[i] = require("../../../articles/"+word)
-}
 export default {
   data () {
     return {
@@ -27,7 +24,10 @@ export default {
   },
   computed: {},
   mounted () {
-    this.items = config.path.map(url=>url.substr(0,url.length-3))
+    // console.log(config);
+    this.items = contents
+    console.log(this.items);
+    // console.log(this.items);
   },
   methods: {},
   components: {
@@ -36,4 +36,21 @@ export default {
 }
 </script>
 <style scoped>
+.header{
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top:3%;
+  padding:2%;
+  font-size: 42px
+
+}
+.my-articles{
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top:3%;
+  padding:2%;
+  border: 1px solid rgb(54, 118, 217);
+  /*border-style: solid;*/
+  border-radius: 5px;
+}
 </style>

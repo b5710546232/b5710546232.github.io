@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <div class="header">
+    <div class="section-header">
     <SectionHeader></SectionHeader>
+    <Navbar></Navbar>
     </div>
     <div class="section-body">
     <SectionBody></SectionBody>
@@ -14,6 +15,7 @@
 import SectionHeader from './components/SectionHeader.vue'
 import SectionBody from './components/SectionBody.vue'
 import SectionFooter from './components/Footer.vue'
+import Navbar from './components/Navbar.vue'
 export default {
   name: 'app',
   data () {
@@ -25,7 +27,8 @@ export default {
   components : {
     SectionHeader,
     SectionBody,
-    SectionFooter
+    SectionFooter,
+    Navbar
   }
 }
 </script>
@@ -41,7 +44,8 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
-.header{
+.section-header{
+  position: relative;
 }
 .section-body{
   position: relative;

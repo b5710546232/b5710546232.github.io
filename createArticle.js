@@ -9,7 +9,8 @@ console.log(myDate)
 let title = process.argv[2]
 
 let fileName = myDate+'_'+title
-fs.writeFile(TARGET+fileName+'.md','' , function (err) {
+let template = '# '+title+'\n\n---\n'+'date: '+myDate+'\n---\n\n'
+fs.writeFile(TARGET+fileName+'.md',template , function (err) {
   if (err)
   return console.log(err);
 })

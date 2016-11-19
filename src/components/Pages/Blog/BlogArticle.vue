@@ -1,14 +1,21 @@
 <template lang="html">
   <div>
-    <div class="content">
-      <div class = "title article"><h1><router-link v-bind:to="router" append >{{articleName}}</router-link></h1></div>
+    <div class="my-articles">
+      <div class="columns">
+        <div class="column is-6">
+          <div class = "title article"><router-link v-bind:to="router" append >{{articleName}}</router-link></div>
+        </div>
+        <div class="column is-6">
+          <div class = "title article">{{articleDate}}</div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['articleName'],
+  props: ['articleName','articleDate'],
   data () {
     return {
       router:""
@@ -23,14 +30,7 @@ export default {
 }
 </script>
 <style scoped>
-.content{
-  margin-left: 3%;
-  margin-right: 3%;
-  margin-top:3%;
-  padding:2%;
-  border: 1px solid rgb(54, 118, 217);
-  /*border-style: solid;*/
-  border-radius: 5px;
+.my-articles{
 }
 .article{
   text-align: center;
